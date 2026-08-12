@@ -1,0 +1,39 @@
+name: fuqingzhu-bianzheng
+version: 1.0.0
+description: 傅青主辨证论治——基于《傅青主医学全书》的完整辨证施治技能：四诊采集→辨证分析→处方医嘱→免责声明。内置女科81方、男科108方、外科儿科方、产后专章，共189方知识库。
+category: 医疗健康
+author: Administrator
+license: MIT
+triggers:
+  - 辨证
+  - 傅青主
+  - 傅山
+  - 女科
+  - 带下
+  - 血崩
+  - 调经
+  - 不孕
+  - 产后
+  - 生化汤
+  - 完带汤
+  - 易黄汤
+  - 开方
+  - 调理
+dependencies:
+  runtime: none
+  external_apis: none
+  files:
+    - references/bianzheng-total.md
+    - references/nvke-formulary.md
+    - references/nanke-formulary.md
+    - references/waike-erke-formulary.md
+    - references/chanhou-zhuanzhang.md
+file_structure:
+  - SKILL.md
+  - references/
+  - test-prompts.json
+safety:
+  scan_passed: true
+  medical_disclaimer: true
+  no_external_calls: true
+  no_data_exfiltration: true
